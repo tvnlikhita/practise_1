@@ -1,26 +1,59 @@
 # practise_1
-git init    -  starts tracking the folder
+
+sudo apt update, sudp apt install -y git, git --version (to check version)
+
+git init    -  initializes a new git repo in the cwd. starts tracking the folder
+
+(one time setup for name, email)
+
+git config --global user.name "<name>"
+
+git config --global user.email "<mailid>"
+
+git config --global --list
 
 git status
 
-git add .
+git add <file>      -   stages spacified files for the next commit
 
-git commit -m"commits"
+git add .      -    stages all untracked files for the commit
+
+git commit -m"commits"    -  saves a checkpoint
 
 git remote add origin <repo-url>
 
 git remote set-url origin <repo-url>
 
+git push -u origin <branch>    -  to push the local commits/changes to specified branch on the remote repository
+
+git branch      -  lists all specified branches
+
+git branch branchname    -  creates a new branch  
+
+git switch branchname    -  to switch to a new branch
+
+git checkout -b branchname    -  creates and switches to the new branch
+
+git switch main      -    to switch to another branch
+
+git merge <branch_name>    -  to merge the data from specified branch to current branch(main)
+
+git clone <repo-url>      -  copies a remote repo to your local machine
+
+git restore --staged <file>    -  unstages a file from the next commit
+
 git log      -   shows all saved versions
 
-git log --oneline
+git log --oneline    -  show all saved versions in oneline
 
-git diff    -  to see what changed, means shoe changes between versions
+git diff    -  to see what changed, means show changes between versions
 
 git log --oneline --decorate    -  show all versions (history)
 
 git show <commit_id>:<file_name>    -  this shows the file as it was in that version
 
-git checkout <commit_id>    -  to go back to an older version ( we can see only that version lines/files exist. we can also go to latest version of files (git checkout <latest_commit_id>)
+git checkout <commit_id>    -  to go back to an older version ( we can see only that version lines/files exist. we can also go to latest version of files (git checkout <latest_commit_id>). jump to an old time state
+
+git restore --source <commit_id> file_path    - to restore old version of file (permanent restore). bring old content back
 
 
