@@ -28,7 +28,7 @@ git remote -v    -  shows the remote repositories configured for your local repo
 
 git push -u origin <branch>    -  to push the local commits/changes to specified branch on the remote repository
 
-git branch      -  lists all specified branches
+git branch      -  lists all specified branches (branch - a copy to try changes safely
 
 git branch branchname    -  creates a new branch  
 
@@ -59,13 +59,15 @@ git checkout <commit_id>    -  to go back to an older version ( we can see only 
 git restore --source <commit_id> file_path    - to restore old version of file (permanent restore). bring old content back
 
 
-
-<h2>Stashing</h2>
+<h4>Stashing</h4>
 
 git stash    -  temporarily saves uncommitted changes to work on something else
 
 git stash list    -  lists all stashed changes
 
+git stash apply    -  reapplies the most recent stash without removing it
+
+git stash pop    -  reapplies the most recent stash and removes it from the stash list
 
 
 
