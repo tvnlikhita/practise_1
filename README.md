@@ -59,3 +59,13 @@ git checkout <commit_id>    -  to go back to an older version ( we can see only 
 git restore --source <commit_id> file_path    - to restore old version of file (permanent restore). bring old content back
 
 
+
+<h2>Stashing</h2>
+
+git stash    -  temporarily saves uncommitted changes to work on something else
+
+git stash list    -  lists all stashed changes
+
+
+
+
