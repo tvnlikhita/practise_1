@@ -4,15 +4,15 @@ sudo apt update, sudp apt install -y git, git --version (to check version)
 
 git init    -  initializes a new git repo in the cwd. starts tracking the folder
 
-(one time setup for name, email)
+(one time setup for name, email) - used to set or verify the identity when making commits, --global means applies to all repos in the system
 
-git config --global user.name "<name>"
+git config --global user.name "<name>"    -  to set name for the git commit
 
-git config --global user.email "<mailid>"
+git config --global user.email "<mailid>"    -  to set email address for commits
 
-git config --global --list
+git config --global --list      - displays all global git configuration settings
 
-git status
+git status      -    displays current state of the working directory and staging area (modified - if a file changes, changes to be committed - after staging area, untracked - if new file is created, to know if working tree is clean)
 
 git add <file>      -   stages spacified files for the next commit
 
@@ -20,9 +20,11 @@ git add .      -    stages all untracked files for the commit
 
 git commit -m"commits"    -  saves a checkpoint
 
-git remote add origin <repo-url>
+git remote add origin <repo-url>    -  to connect your local git repo to the remote repository.so, it is like "When I push or pull using origin, go to this URL"
 
-git remote set-url origin <repo-url>
+git remote set-url origin <repo-url>    -  to update the remote repository for the origin
+
+git remote -v    -  shows the remote repositories configured for your local repo
 
 git push -u origin <branch>    -  to push the local commits/changes to specified branch on the remote repository
 
