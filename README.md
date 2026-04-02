@@ -1,5 +1,10 @@
 # practise_1
 
+Git is a versioning control system, allows developers to track changes to files over time, collaborate with teams, and manage the project history efficiently.
+Can revert back to previous versions if something fails.
+Maintain multiple versions of a project.
+It has strong branching and merging
+
 sudo apt update, sudp apt install -y git, git --version (to check version)
 
 git init    -  initializes a new git repo in the cwd. starts tracking the folder
